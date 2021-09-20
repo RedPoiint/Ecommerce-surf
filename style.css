@@ -197,6 +197,14 @@ header nav ul li {
 }
 
 
+/* Google maps */
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+
 /* Responsividade */
 
 @media (max-width: 767px) {}
