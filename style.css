@@ -183,6 +183,11 @@ header nav ul li {
     text-align: center;
 }
 
+.servicos .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
 
 /* Responsividade */
 
