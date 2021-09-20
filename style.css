@@ -170,7 +170,17 @@ header nav ul li {
 .servicos .card .svg {
     width: 60px;
     height: 60px;
-    margin-bottom: 50px;
+    margin: 50px;
+}
+
+.servicos .card .h3 {
+    font-weight: bold;
+}
+
+.servicos .card {
+    color: grey;
+    font-size: .8rem;
+    text-align: center;
 }
 
 
