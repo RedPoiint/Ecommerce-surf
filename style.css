@@ -155,8 +155,9 @@ header nav ul li {
     padding-top: 25px;
     display: flex;
     max-width: 950px;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .servicos .card {
@@ -165,21 +166,28 @@ header nav ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 20px;
 }
 
-.servicos .card .svg {
+.servicos .card svg {
     width: 60px;
     height: 60px;
     margin: 50px;
+    transition: all 1s;
 }
 
-.servicos .card .h3 {
+.servicos .card svg:hover {
+    stroke: #288077;
+    transform: scale(1.1);
+}
+
+.servicos .card h3 {
     font-weight: bold;
 }
 
-.servicos .card {
+.servicos .card p {
     color: grey;
-    font-size: .8rem;
+    font-size: .9rem;
     text-align: center;
 }
 
