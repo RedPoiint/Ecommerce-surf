@@ -120,8 +120,31 @@
         </div>
     </section>
 
+    <section class="contato">
+        <div id="map"></div>
+    </section>
+
     <script>
-        feather.replace()
+        feather.replace();
+
+        function initMap() {
+            var uluru = {
+                lat: -19.924108,
+                lng: -43.943470
+            };
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly">
     </script>
 </body>
 
