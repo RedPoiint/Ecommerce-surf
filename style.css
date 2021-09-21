@@ -9,6 +9,10 @@ body {
     width: 100vw;
 }
 
+ul {
+    list-style: none;
+}
+
 button {
     padding: 10px 15px;
     border-radius: 8px;
@@ -56,6 +60,7 @@ header nav ul li {
 .pranchas {
     background: #B4D2CA;
     padding: 15px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
 }
 
 .pranchas .pranchas-cards {
@@ -79,6 +84,7 @@ header nav ul li {
     border-radius: 24px 0px;
     margin: 25px;
     position: relative;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
 }
 
 .pranchas .card-image {
@@ -99,7 +105,7 @@ header nav ul li {
 }
 
 .pranchas .card-content ul li {
-    font-size: .8rem;
+    font-size: .9rem;
     display: flex;
     align-content: center;
     margin: 3px 0;
@@ -137,7 +143,7 @@ header nav ul li {
 
 .pranchas .card .card-tag p {
     margin: 0;
-    font-size: .8rem;
+    font-size: .9rem;
     color: white;
     font-weight: bold;
 }
@@ -167,6 +173,8 @@ header nav ul li {
     justify-content: center;
     align-items: center;
     margin: 0 20px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    border-radius: 8px;
 }
 
 .servicos .card svg {
@@ -204,8 +212,67 @@ header nav ul li {
     width: 100%;
 }
 
+.contato {
+    padding: 60px;
+    background: #B4D2CA;
+    position: relative;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    z-index: 99;
+    border-radius: 8px;
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato .contato-card h1 {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato .contato-card li {
+    font-size: .9rem;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+
+.contato .contato-card li svg {
+    width: 16px;
+    margin: 10px;
+}
+
 
 /* Responsividade */
+
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+    }
+    .contato .contato-card {
+        left: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contato {
+        padding: 20px 0;
+    }
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
 
 @media (max-width: 767px) {}
 
