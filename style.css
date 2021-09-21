@@ -6,11 +6,15 @@
 body {
     margin: 0;
     font-family: 'Original Surfer', cursive;
-    width: 100vw;
 }
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 button {
@@ -30,7 +34,7 @@ header {
 header nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 30px;
+    margin: auto 30px;
 }
 
 header nav p {
@@ -38,7 +42,6 @@ header nav p {
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
 }
 
@@ -48,7 +51,7 @@ header nav ul li {
 
 .header-content {
     max-width: 400px;
-    margin: auto;
+    margin: 150px auto;
     text-align: center;
 }
 
@@ -101,7 +104,7 @@ header nav ul li {
 .pranchas .card-content ul {
     display: flex;
     flex-direction: column;
-    list-style: none;
+    padding: 0;
 }
 
 .pranchas .card-content ul li {
@@ -135,7 +138,7 @@ header nav ul li {
 .pranchas .card .card-tag-bottom {
     position: absolute;
     left: 0;
-    top: 190px;
+    top: 160px;
     background: blue;
     border-radius: 0 8px 8px 0;
     padding: 5px 10px;
@@ -255,6 +258,9 @@ header nav ul li {
 
 /* Responsividade */
 
+
+/*Especial para o mapa */
+
 @media (max-width: 950px) {
     .contato {
         padding: 60px 0;
@@ -274,7 +280,13 @@ header nav ul li {
     }
 }
 
+
+/* Para tablets */
+
 @media (max-width: 767px) {}
+
+
+/* Para celulares */
 
 @media (max-width: 480px) {
     body {
